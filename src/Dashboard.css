@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+   
+} 
+
+#structure
+{
+    /* background: url('https://www.designbolts.com/wp-content/uploads/2013/02/Carbonfiber-semi-dark-Grey-Seamless-Pattern-For-Website-Background.jpg'); */
+    background-color: #EAEAEA;
+    background: url('https://waypointpartners.co.uk/wp-content/uploads/2022/05/Waypoint-reverse-semi-transparent-pattern.png');
+  background-size:cover;
+    border-radius: 0;
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+  
+#nav
+{
+    height: 80px;
+    background-color: rgb(28, 28, 99);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+#nav img{
+    height: 75px;
+    margin-left: 15px;
+}
+
+#user
+{
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    align-items: center;
+    color: white;
+}
+
+
+#firstblock
+{
+    display: flex;
+    height: 250px;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+#amount
+{
+    width: 57%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#timing
+{
+    padding: 25px;
+    width: 40%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: rgb(28, 28, 99);
+    border-radius: 25px;
+
+    color: white;
+}
+#calender
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#timing img
+{
+    height: 150px;
+    position: relative;
+    bottom: 10px;
+}
+
+#time
+{
+    position: relative;
+    bottom: 70px;
+    font-size: 20px;
+    display: flex;
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    color: darkblue;
+
+}
+#uname
+{
+   position: relative;
+   top: 18px;
+   font-size: 24px;
+}
+#timing h2
+{
+    font-size: 2rem;
+}
+#user_option
+{
+    display: flex;
+    height: 155px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#option_user1,#option_user2,#option_user3,#option_user4
+{
+    width: 22%;
+    padding: 35px;
+    border: 2px solid black; 
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+
+    box-sizing: border-box;
+    
+}
+#option_user1
+{
+    width: 18%;
+    background-color: rgb(28, 28, 99);
+    color: white;
+    border-radius: 25px;
+
+}
+
+#option_user1 h2
+{
+    background-color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 0;
+    border-radius: 13px;
+    color: darkblue;
+}
+
+#option_user2,#option_user3,#option_user4
+{
+    border: none;
+}
+#option_user2 button,#option_user3 button,#option_user4 button
+{
+   width: 220px;
+   border-radius: 5px;
+   background-color: rgb(28, 28, 99);
+   font-size: 19px;
+   color: white;
+   padding: 25px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   cursor: pointer;
+}
+#cid
+{
+    font-size: 24px;
+    
+}
+
+
+#action
+{
+    display: flex;
+    height: 450px;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#transactions
+{
+    width: 57%;
+    border: 2px solid black; 
+    background-color: whitesmoke;
+    border-radius: 25px;
+
+}
+
+#notifications
+{
+    width: 40%;
+    border: 2px solid black; 
+    overflow-y: scroll;
+    border-radius: 25px;
+
+    border-top: none;
+    background-color: whitesmoke;
+}
+#notifications::-webkit-scrollbar {
+    display: none;
+}
+
+#user_interface
+{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+#transactions
+{
+    overflow-y: scroll;
+    border-top: none;
+}
+
+#transactions ul
+{
+    width: 80%;
+}
+
+#transactions::-webkit-scrollbar {
+    display: none;
+}
+ 
+#transactions h1
+{
+    color: white;
+    background-color: rgb(28, 28, 99);
+    border-radius: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 28px;
+    position: sticky;
+    margin-bottom: 20px;
+    top: 0;
+    border-top-right-radius: 5px;
+    
+}
+
+
+#notifications h1
+{
+    color: white;
+    background-color: rgb(28, 28, 99);
+    border-radius: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 28px;
+    position: sticky;
+    margin-bottom: 20px;
+    top: 0;
+}
+#notifications ul
+{
+    width: 82%;
+    margin: auto;
+
+   
+}
+
+#notifications ul li
+{
+    margin-bottom: 20px;
+    color: red;
+}
+#small,#medium,#large
+{
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+#small p 
+{
+    font-size: 21px;
+}
+
+#medium p
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#large p 
+{
+    font-size: 20px;
+}
+
+#amount
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 25px 0 25px;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    
+}
+
+#logout button
+{
+    width: 130px;
+    height: 47px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: darkblue;
+    margin: 0 30px 0 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#ll
+{
+    padding-left: 5px;
+    color: red;
+    font-size: 18px;
+}
+#username
+{
+    font-size: 22px;
+}
+#bname
+{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+    position: relative;
+    bottom: 22px;
+}
+#action p
+{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    line-height: 65px;
+    padding-left: 25px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    
+}
+#action p h3
+{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 28px;
+    color: rgb(28, 28, 99);;
+}

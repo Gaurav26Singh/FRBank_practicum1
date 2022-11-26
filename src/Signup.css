@@ -1,0 +1,123 @@
+/* ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  } */
+  #signup
+  {
+      width: 53%;
+      display: flex;
+      height: 87vh;
+      flex-direction: column;
+      overflow-y: scroll;
+      background: url('https://waypointpartners.co.uk/wp-content/uploads/2022/05/Waypoint-reverse-semi-transparent-pattern.png');
+      background-color: white;
+    background-size:cover;
+    position: absolute;
+    left: 0;
+    transition: 0.5s ease-in;
+  }
+  #sform
+  {
+      width: 60%;
+      display: flex;
+      margin: auto;
+      height: 77vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 20px;
+  }
+  #dob
+  {
+      margin-top: 20px;
+      padding-bottom: 10px;
+  
+  }
+  #sform input
+  {
+      font-size: 18px;
+      padding-top: 15px;
+      border:none;
+      outline: none;
+      border-bottom: 1px solid black;
+      background: transparent;
+  }
+  #sform input:focus
+  {
+      border:none;
+      outline: none;
+      background: transparent;
+      border-bottom: 1px solid black;
+      
+  }
+  #sform label
+    {
+      color: blue;
+      font-weight: 500;
+      margin-top: 25px;
+    }
+  #signup h3
+    {
+      margin-top: 0;
+      padding-bottom: 52px;
+      font-size: 38px;
+      text-align: center;
+      display: block;
+      z-index: -1;
+      
+  
+    }
+  
+    .box
+    {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    #regis
+    {
+      border: 1px solid black;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 21px;
+      width: 250px;
+      height: 50px;
+      background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(10, 14, 138) 0%, rgb(17, 8, 113) 97.5% );
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    }
+    #back
+    {
+      position:relative;
+      top: 20px;
+      left: 20px;
+      width: fit-content;
+      padding:12px;
+      font-size: 20px;
+      background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(10, 14, 138) 0%, rgb(17, 8, 113) 97.5% );
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 60%;
+    }
+    #try
+    {
+      position: fixed;
+      top: 0;
+    }

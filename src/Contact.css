@@ -1,0 +1,58 @@
+.containera{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+a{
+    padding: 25px;
+    background-color: #f5f6fa;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    box-shadow: rgb(116, 116, 219) 0px 5px 15px;
+    /* line-height: 50px; */
+}
+h1{
+    width: fit-content;
+    color: white;
+    font-family: poppins,sans-serif;
+    width: fit-content;
+    margin-bottom: 20px
+    ;
+    /* margin: auto; */
+    /* position: absolute;
+    bottom: 350px; */
+
+}
+
+.fa-instagram{
+    color: #ee0877;
+    font-size: 26px;
+   
+}
+.fa-youtube{
+    color: #e84118;
+    font-size: 26px;
+}
+.fa-linkedin{
+   color:#0386cd;
+   font-size: 26px;
+}
+.fa-telegram{
+    color: rgb(94, 204, 247);
+    font-size: 26px;
+}
+.fa-envelope{
+    color: rgb(230, 18, 18);
+    font-size: 26px;
+}
+a i {
+    transition:all 0.3s linear;
+   
+}
+a:hover i{
+    transform: scale(1.4);
+}
