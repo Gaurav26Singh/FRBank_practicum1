@@ -1,0 +1,140 @@
+#depam
+{
+    background-color: white;
+    color: rgb(28, 28, 99);
+    position: fixed;
+    top: 30%;
+    left: 33%;
+    z-index: 1;
+    height:50vh;
+    display: flex;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#An
+{
+    padding-left: 5px;
+}
+#withdrawm
+{
+    background-color: white;
+    color: rgb(28, 28, 99);
+    position: fixed;
+    top: 30%;
+    left: 33%;
+    z-index: 1;
+    height:50vh;
+    display: flex;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+
+}
+#depositbox
+{
+    border-radius: 20px;
+    position: relative;
+    width: fit-content;
+    padding: 40px 60px 20px 60px;
+    
+}
+#dfun
+{
+    display: flex;
+    justify-content: center;
+}
+#dhead
+{
+    background-color: rgb(28, 28, 99);
+    color: white;
+    padding: 15px 0 15px 0;
+    text-align: center;
+   
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+#acc
+{
+ font-size: 25px;
+ font-weight: bold;
+}
+#damount
+{
+    font-size: 25px;
+    margin-top: 22px;
+ font-weight: bold;
+}
+#rupee
+{
+    margin-left: 20px;
+    padding-right: 5px;
+}
+#da
+{
+    height: 35px;
+    width: 250px;
+    position: relative;
+    top: -4px;
+     outline: none;
+     border: 1px solid darkblue;
+     border-radius: 10px;
+     font-size: 20px;
+     padding: 3px 10px 3px 12px;
+     font-weight: bold;
+     color: rgb(28, 28, 99);
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+#dfun
+{
+    margin-top: 30px;
+}
+.df
+{
+    height: 50px;
+    width: 120px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+#depositam
+{
+    margin-right: 70px;
+    background-color: rgb(28, 28, 99);
+    color: white;
+}
+
+#cancel
+{
+    background-color: red;
+    color: white;
+}
+
+#failed
+{
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: none;
+}
+#success
+{
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: none;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+}
