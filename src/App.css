@@ -42,7 +42,7 @@ header
   margin-left: auto;
   background-color:rgb(22, 22, 92);
   display: flex;
-  height: 12vh;
+  height: 11.5vh;
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -57,7 +57,7 @@ header
 .options
 {
   margin-top: 2px;
-  width: 800px;
+  width: 830px;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -67,7 +67,7 @@ header
   text-decoration: none;
   color: white;
   cursor: pointer;
-  font-size: 19px;
+  font-size: 19.5px;
   font-family: 'Ubuntu', sans-serif;
   padding: 10px 15px 10px 15px;
 }
@@ -138,6 +138,7 @@ header
   margin-left: auto;
   height: 60px;
   width: 200px;
+  border-radius: 18px;
   font-size: 21px;
   background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(10, 14, 138) 0%, rgb(17, 8, 113) 97.5% );
   color: white;
@@ -200,4 +201,11 @@ header
 .members li h2
 {
   text-align: center;
+}
+li a span
+{
+  font-size: 21px;
+  padding-right: 8px;
+  position: relative;
+  top: 3px;
 }

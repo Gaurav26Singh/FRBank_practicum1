@@ -4,10 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './login.css';
 import {useState} from 'react';
+import { FaArrowLeft } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, RecaptchaVerifier,signInWithPhoneNumber,signInWithRedirect,GoogleAuthProvider,getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.12.0/firebase-auth.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, RecaptchaVerifier,signInWithPhoneNumber,signInWithRedirect,GoogleAuthProvider,getRedirectResult,signOut,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/9.12.0/firebase-auth.js";
         import { getDatabase,ref, set,child, get,remove,update  } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-database.js";
         import { createSearchParams,Routes,Route,useNavigate,Link } from 'react-router-dom';
 
@@ -103,6 +104,20 @@ console.log('login success');
   }
 
   const [lisShown, lsetIsShown] = useState(false);
+
+  const reset = event => {
+    var emaill = document.getElementById('emailadd').value;
+    sendPasswordResetEmail(auth, emaill)
+    .then(() => {
+        alert('Password reset link sent to your registered email !')
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+      // ..
+    });
+  };
   const handlelClick = event => {
     lsetIsShown(current => !current);
   };
@@ -205,7 +220,7 @@ console.log('login success');
   return (
     <div id='llogin' data-aos="slide-right"
     data-aos-once="True" style={{left: lisShown ? '-70%' : '0'}}>
-       <button id='back'  onClick={handlelClick}>back</button>
+       <button id='back'  onClick={handlelClick}><p><FaArrowLeft/></p></button>
         <h2>Login here</h2>
       <form >
         <label>E-mail</label>
@@ -214,8 +229,8 @@ console.log('login success');
         <input type="password" id="password"/>
         <div className="box">
         <button id="loginbtn" type="button" onClick={handleLogIn}>Login</button>
-        
       </div>
+        <div id="fp"><a onClick={reset}>Forgot Password?</a></div>
       </form>  
       </div>
   )

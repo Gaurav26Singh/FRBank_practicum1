@@ -74,6 +74,18 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     }
+    #fp
+    {
+      position: relative;
+      margin: auto;
+      margin-top: 0px;
+    }
+    #fp a
+    {
+      color: darkblue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
     #back
     {
       position:relative;
