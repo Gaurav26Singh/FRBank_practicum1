@@ -141,7 +141,7 @@ const Dashboard = () => {
     
        <div id="logo">
         <img src="https://logoeps.com/wp-content/uploads/2013/03/linkin-park-band-vector-logo1.png" alt=""/>
-        <span id='bname'>FRBank</span>
+        <span id='bname'>FR Bank</span>
         </div>
         <div id="user">
             <div id="username"><p>{userdata.username}</p></div>

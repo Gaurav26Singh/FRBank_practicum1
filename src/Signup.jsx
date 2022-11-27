@@ -4,6 +4,7 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useState} from 'react';
+import { FaArrowLeft } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import { Routes,Route,useNavigate } from 'react-router-dom';
   import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +12,7 @@ import { Routes,Route,useNavigate } from 'react-router-dom';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, RecaptchaVerifier,signInWithPhoneNumber,signInWithRedirect,GoogleAuthProvider,getRedirectResult,signOut} from "https://www.gstatic.com/firebasejs/9.12.0/firebase-auth.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, RecaptchaVerifier,signInWithPhoneNumber,signInWithRedirect,GoogleAuthProvider,getRedirectResult,signOut,deleteUser} from "https://www.gstatic.com/firebasejs/9.12.0/firebase-auth.js";
         import { getDatabase,ref, set,child, get,remove  } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-database.js";
 
 // const element = <FontAwesomeIcon icon={faArrowLeft} />
@@ -54,6 +55,7 @@ const Signup = () => {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(); 
+  
   const provider = new GoogleAuthProvider();
   const database = getDatabase(app);
   let curr;
@@ -136,6 +138,7 @@ const Signup = () => {
        setTimeout(()=>{window.location.reload()},3300)
     } catch (error) {
       rmv();
+      
 			handleError(error);
       failurenotify();
       setTimeout(()=>{window.location.reload()},3300)
@@ -209,6 +212,12 @@ const Signup = () => {
 	}
 function rmv()
    {
+    const user = auth.currentUser;
+    deleteUser(user).then(() => {
+      
+    }).catch((errorc) => {
+       
+    });
   remove(ref(database,'users/' + curr))
   .then(()=>{ M.toast({html: 'SignUp Failed!',classes:'false'});})
   .catch((error)=>{ })
@@ -222,7 +231,7 @@ function rmv()
     </section>
     <div id='signup' data-aos="slide-right"
     data-aos-once="false" style={{left: isShown ? '-70%' : '0'}}>
-       <button id='back'  onClick={handleClick}>back</button>
+       <button id='back'  onClick={handleClick}><p><FaArrowLeft/></p></button>
       <h3>SignUp</h3>
     <form id='sform'>
       <label>Name</label>
@@ -232,7 +241,7 @@ function rmv()
       <label>Date of Birth</label>
       <input type="date" id="dob"/>
       <label>Accout Number</label>
-      <input type="text" id="an"/>
+      <input type="text" id="an" autocomplete="off"/>
         <label>E-mail</label>
         <input type="email" id="email"/>
         <label>Password</label>

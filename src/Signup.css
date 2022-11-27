@@ -107,14 +107,18 @@
       top: 20px;
       left: 20px;
       width: fit-content;
-      padding:12px;
-      font-size: 20px;
+      font-size: 24px;
       background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(10, 14, 138) 0%, rgb(17, 8, 113) 97.5% );
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     border: none;
-    border-radius: 60%;
+   
+    }
+
+    #back p
+    {
+      padding: 2px 4px 0px 4px;
     }
     #try
     {

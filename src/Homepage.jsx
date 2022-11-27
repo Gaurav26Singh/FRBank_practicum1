@@ -8,6 +8,9 @@ import Signup from './Signup';
 import {useState} from 'react';
 import Support from './Support';
 import Login from './pages/Login'
+import { AiFillHome } from "react-icons/ai";
+import { BiSupport } from "react-icons/bi";
+import { SiAzurefunctions } from "react-icons/si";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -34,14 +37,14 @@ const Homepage = () => {
      <header>
          <div className="logo">
           <img src={"https://logoeps.com/wp-content/uploads/2013/03/linkin-park-band-vector-logo1.png"} alt="" />
-          <span id='bname'>FRBank</span>
+          <span id='bname'>FR Bank</span>
          </div>
          <div className="links">
           <ul className="options">
-            <li><a href="#">Home</a><div className="liner"></div></li>
-            <li><a href='#howitworks'>How it works</a></li>
+            <li><a href="#"><span><AiFillHome/></span>Home</a><div className="liner"></div></li>
+            <li><a href='#howitworks'><span><SiAzurefunctions/></span>How it works</a></li>
             {/* <li><a href="#contributors">About Us</a></li> */}
-            <li><a href="#support">Support</a></li>
+            <li><a href="#support"><span><BiSupport/></span>Support</a></li>
             <li><a id='login' onClick={handlelClick}>Login</a></li>
           </ul>
          </div>
@@ -70,7 +73,6 @@ const Homepage = () => {
      </div>
      </div>
      <How/>
-     <Login/>
      <ToastContainer/>
      <Support/>
      </>
